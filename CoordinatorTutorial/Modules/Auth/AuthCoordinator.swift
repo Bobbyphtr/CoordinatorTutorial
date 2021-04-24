@@ -10,7 +10,7 @@ import UIKit
 
 class AuthCoordinator : Coordinator {
     
-    var parentCoordinator: Coordinator?
+    weak var parentCoordinator: Coordinator?
     
     var children: [Coordinator] = []
     
@@ -22,6 +22,7 @@ class AuthCoordinator : Coordinator {
     
     
     func start() {
+        print("AuthCoordinator Start")
         goToLoginPage()
     }
     
@@ -54,4 +55,7 @@ class AuthCoordinator : Coordinator {
         navigationController.pushViewController(registerViewController, animated: true)
     }
     
+    deinit {
+        print("AuthCoordinator Deinit")
+    }
 }
