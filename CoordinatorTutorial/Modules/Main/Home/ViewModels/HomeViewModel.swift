@@ -7,12 +7,25 @@
 
 import Foundation
 
+protocol HomeNavigation : AnyObject {
+    func goToBuyProduct()
+    func logout()
+}
+
 class HomeViewModel{
     
-    weak var appCoordinator : HomeCoordinator!
+    weak var navigation : HomeNavigation!
+    
+    init(nav : HomeNavigation) {
+        self.navigation = nav
+    }
     
     func buyProducts(){
-        
+        navigation.goToBuyProduct()
+    }
+    
+    func logOut(){
+        navigation.logout()
     }
 
 }

@@ -13,6 +13,20 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.title  = "Home"
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
+    @IBAction func buySomeProductTapped(_ sender: Any) {
+        viewModel.buyProducts()
+    }
+    
+    @IBAction func logoutButtontapped(_ sender: Any) {
+        viewModel.logOut()
+    }
+    
 }

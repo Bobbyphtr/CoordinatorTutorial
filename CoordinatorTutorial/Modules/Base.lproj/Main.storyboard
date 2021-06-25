@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -24,20 +24,36 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZa-BW-z0b">
-                                <rect key="frame" x="159.5" y="489.5" width="95" height="30"/>
+                                <rect key="frame" x="159.5" y="576.5" width="95" height="30"/>
                                 <state key="normal" title="Register Page"/>
                                 <connections>
                                     <action selector="registerButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Uf-IZ-9vt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RvY-hE-sBH">
+                                <rect key="frame" x="168.5" y="489.5" width="77" height="55"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="dde-AH-mSB"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+                                <state key="normal" title="LOGIN">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.88077670529999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sM5-2L-v9F"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="RvY-hE-sBH" firstAttribute="top" secondItem="g9V-aj-nDw" secondAttribute="bottom" constant="24" id="GMg-mf-7eg"/>
+                            <constraint firstItem="RvY-hE-sBH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JTO-GB-Duc"/>
                             <constraint firstItem="g9V-aj-nDw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K6z-v1-pcx"/>
                             <constraint firstItem="g9V-aj-nDw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="MlM-Qs-PuJ"/>
-                            <constraint firstItem="jZa-BW-z0b" firstAttribute="top" secondItem="g9V-aj-nDw" secondAttribute="bottom" constant="24" id="NyA-dO-FkS"/>
                             <constraint firstItem="jZa-BW-z0b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZsT-98-NQD"/>
+                            <constraint firstItem="jZa-BW-z0b" firstAttribute="top" secondItem="RvY-hE-sBH" secondAttribute="bottom" constant="32" id="sed-j7-zTh"/>
                         </constraints>
                     </view>
                     <connections>
@@ -48,10 +64,10 @@
             </objects>
             <point key="canvasLocation" x="48" y="60"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="5Ur-0d-UXA">
             <objects>
-                <viewController id="gDG-vJ-gvp" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="gDG-vJ-gvp" customClass="HomeViewController" customModule="CoordinatorTutorial" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kMV-hE-c0M">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -72,6 +88,9 @@
                                 <state key="normal" title="Buy Some Product">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="buySomeProductTapped:" destination="gDG-vJ-gvp" eventType="touchUpInside" id="CnD-Vj-0ep"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcY-5u-9ak">
                                 <rect key="frame" x="147" y="601.5" width="120" height="48"/>
@@ -83,6 +102,9 @@
                                 <state key="normal" title="Logout">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="logoutButtontapped:" destination="gDG-vJ-gvp" eventType="touchUpInside" id="0Po-tM-Eeo"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WWD-Vh-mYo"/>
@@ -101,10 +123,10 @@
             </objects>
             <point key="canvasLocation" x="36" y="718"/>
         </scene>
-        <!--View Controller-->
+        <!--Product List View Controller-->
         <scene sceneID="Jgr-OK-HVv">
             <objects>
-                <viewController id="KJ8-kU-hY8" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProductListViewController" id="KJ8-kU-hY8" customClass="ProductListViewController" customModule="CoordinatorTutorial" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sa5-Pl-vrP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -116,14 +138,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqI-zN-W6Z">
-                                <rect key="frame" x="28.5" y="385" width="357" height="78"/>
+                                <rect key="frame" x="42" y="385" width="330" height="46.5"/>
                                 <string key="text">This button below only to simulate a trigger to go to other operation or page. So lets assume that you have choose a product by tap the button below for now :)</string>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nC5-20-Qj5">
-                                <rect key="frame" x="135.5" y="487" width="143" height="55"/>
+                                <rect key="frame" x="135.5" y="455.5" width="143" height="55"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="Lxm-hA-cfE"/>
@@ -132,6 +154,9 @@
                                 <state key="normal" title="Choose Product">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="chooseProductTapped:" destination="KJ8-kU-hY8" eventType="touchUpInside" id="o82-5J-JZV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lJU-SV-pMy"/>
@@ -152,16 +177,16 @@
             </objects>
             <point key="canvasLocation" x="793" y="718"/>
         </scene>
-        <!--View Controller-->
+        <!--Payment View Controller-->
         <scene sceneID="vX1-6g-g9c">
             <objects>
-                <viewController id="nLg-SC-NPX" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PaymentViewController" id="nLg-SC-NPX" customClass="PaymentViewController" customModule="CoordinatorTutorial" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WGt-BG-LN8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="762-yK-X0o">
-                                <rect key="frame" x="16" y="375.5" width="382" height="145.5"/>
+                                <rect key="frame" x="16" y="379" width="382" height="138"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment UI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ppN-eH-JYK">
                                         <rect key="frame" x="147.5" y="0.0" width="87" height="20.5"/>
@@ -170,13 +195,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This button below only to simulate a trigger to go to other operation or page." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSN-sn-Lgx">
-                                        <rect key="frame" x="12.5" y="36.5" width="357" height="38"/>
+                                        <rect key="frame" x="26.5" y="36.5" width="329.5" height="30.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q93-O8-MvU">
-                                        <rect key="frame" x="126.5" y="90.5" width="129" height="55"/>
+                                        <rect key="frame" x="126.5" y="83" width="129" height="55"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="55" id="dJs-AJ-eWr"/>
@@ -185,6 +210,9 @@
                                         <state key="normal" title="Back to Home">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="backToHomeTapped:" destination="nLg-SC-NPX" eventType="touchUpInside" id="ATh-ps-r6a"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -203,10 +231,10 @@
             </objects>
             <point key="canvasLocation" x="1561" y="718"/>
         </scene>
-        <!--View Controller-->
+        <!--History View Controller-->
         <scene sceneID="MhV-bE-lvV">
             <objects>
-                <viewController id="nE8-6M-cma" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HistoryViewController" id="nE8-6M-cma" customClass="HistoryViewController" customModule="CoordinatorTutorial" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N6F-KU-fGx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -231,10 +259,10 @@
             </objects>
             <point key="canvasLocation" x="35" y="1424"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="LCG-FV-uiV">
             <objects>
-                <viewController id="kDd-pj-Ggr" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileViewController" id="kDd-pj-Ggr" customClass="ProfileViewController" customModule="CoordinatorTutorial" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XHo-QK-mfv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -315,6 +343,9 @@
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

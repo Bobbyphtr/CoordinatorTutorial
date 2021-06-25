@@ -7,12 +7,20 @@
 
 import Foundation
 
+protocol RegisterNavigation : AnyObject{
+    func goToLoginPage()
+}
+
 class RegisterViewModel {
     
-    weak var appCoordinator : AuthCoordinator!
+    weak var navigation : RegisterNavigation!
+    
+    init(nav : RegisterNavigation) {
+        self.navigation = nav
+    }
     
     func goToLogin(){
-        appCoordinator.goToLoginPage()
+        navigation.goToLoginPage()
     }
     
 }

@@ -1,18 +1,18 @@
 //
-//  HistoryViewController.swift
+//  ProfileViewController.swift
 //  CoordinatorTutorial
 //
-//  Created by BobbyPhtr on 24/04/21.
+//  Created by BobbyPhtr on 24/06/21.
 //
 
 import UIKit
 
-class HistoryViewController: UIViewController {
+class ProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        navigationItem.title = "Profile"
     }
     
 

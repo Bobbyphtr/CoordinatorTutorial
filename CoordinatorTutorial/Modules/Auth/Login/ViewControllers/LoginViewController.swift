@@ -17,8 +17,19 @@ class LoginViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.setNavigationBarHidden(true, animated: true)
+    }
 
     @IBAction func registerButtonTapped(_ sender: Any) {
         viewModel.goToRegister()
     }
+    
+    @IBAction func loginButtonTapped(_ sender: Any) {
+        viewModel.goToHome()
+    }
+    
 }

@@ -23,11 +23,15 @@ class AppCoordinator : Coordinator {
         print("AppCoordinator Start")
         // The first time this coordinator started, is to launch login page.
        goToAuth()
+//        goToHome()
     }
     
     func goToAuth(){
         // For the first time, the app is going to go to Authentication module
         let authCoordinator = AuthCoordinator.init(navigationController: navigationController)
+        // Remove all children, because this is a top level coordinator.
+        children.removeAll()
+        
         authCoordinator.parentCoordinator = self
         children.append(authCoordinator)
         
@@ -37,6 +41,9 @@ class AppCoordinator : Coordinator {
     func goToHome(){
         // Initiate HomeTabBar Coordinator
         let coordinator = HomeTabBarCoordinator.init(navigationController: navigationController)
+        // Remove all children, because this is a top level coordinator.
+        children.removeAll()
+        
         coordinator.parentCoordinator = self
         children.append(coordinator)
         

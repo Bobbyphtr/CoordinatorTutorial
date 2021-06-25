@@ -7,15 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9321F7C12685B94500BFEA9E /* TransactionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9321F7C02685B94500BFEA9E /* TransactionCoordinator.swift */; };
 		9344C1172633EA1800548254 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9344C1162633EA1800548254 /* HomeViewController.swift */; };
 		9344C11A2633EA5600548254 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9344C1192633EA5600548254 /* HomeViewModel.swift */; };
 		9344C11D2633EA9D00548254 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9344C11C2633EA9D00548254 /* HomeCoordinator.swift */; };
 		9344C1202633EB6500548254 /* HomeTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9344C11F2633EB6500548254 /* HomeTabBarCoordinator.swift */; };
-		9344C1232633EB8700548254 /* TransactionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9344C1222633EB8700548254 /* TransactionCoordinator.swift */; };
 		9344C1262633EB9900548254 /* HistoryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9344C1252633EB9900548254 /* HistoryCoordinator.swift */; };
 		9344C1292633EBB500548254 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9344C1282633EBB500548254 /* ProfileCoordinator.swift */; };
 		9344C12C2633ED6100548254 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9344C12B2633ED6100548254 /* HistoryViewController.swift */; };
-		9344C15E2633F23400548254 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9344C15D2633F23400548254 /* Home.storyboard */; };
 		93E7E1352625BDB200F1FC98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E7E1342625BDB200F1FC98 /* AppDelegate.swift */; };
 		93E7E13C2625BDB200F1FC98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93E7E13A2625BDB200F1FC98 /* Main.storyboard */; };
 		93E7E13E2625BDB400F1FC98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93E7E13D2625BDB400F1FC98 /* Assets.xcassets */; };
@@ -27,18 +26,21 @@
 		93E7E15F2625CF6100F1FC98 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E7E15E2625CF6100F1FC98 /* LoginViewModel.swift */; };
 		93E7E1632625CF8C00F1FC98 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E7E1622625CF8C00F1FC98 /* RegisterViewModel.swift */; };
 		93E7E1672625CFA800F1FC98 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E7E1662625CFA800F1FC98 /* AuthCoordinator.swift */; };
+		93E90E922684452D00D7965F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E90E912684452D00D7965F /* ProfileViewController.swift */; };
+		93E90E97268494EC00D7965F /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E90E96268494EC00D7965F /* ProductListViewController.swift */; };
+		93E90E9A2684950300D7965F /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E90E992684950300D7965F /* PaymentViewController.swift */; };
+		93E90E9E26849E0F00D7965F /* TransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E90E9D26849E0F00D7965F /* TransactionViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9321F7C02685B94500BFEA9E /* TransactionCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCoordinator.swift; sourceTree = "<group>"; };
 		9344C1162633EA1800548254 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9344C1192633EA5600548254 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		9344C11C2633EA9D00548254 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		9344C11F2633EB6500548254 /* HomeTabBarCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabBarCoordinator.swift; sourceTree = "<group>"; };
-		9344C1222633EB8700548254 /* TransactionCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionCoordinator.swift; sourceTree = "<group>"; };
 		9344C1252633EB9900548254 /* HistoryCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryCoordinator.swift; sourceTree = "<group>"; };
 		9344C1282633EBB500548254 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
 		9344C12B2633ED6100548254 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
-		9344C15D2633F23400548254 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		93E7E1312625BDB200F1FC98 /* CoordinatorTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoordinatorTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93E7E1342625BDB200F1FC98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93E7E13B2625BDB200F1FC98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -52,6 +54,10 @@
 		93E7E15E2625CF6100F1FC98 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		93E7E1622625CF8C00F1FC98 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		93E7E1662625CFA800F1FC98 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
+		93E90E912684452D00D7965F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		93E90E96268494EC00D7965F /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		93E90E992684950300D7965F /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		93E90E9D26849E0F00D7965F /* TransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,7 @@
 			children = (
 				9344C1382633EE2D00548254 /* Main */,
 				9344C1372633EE2800548254 /* Auth */,
+				93E7E13A2625BDB200F1FC98 /* Main.storyboard */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -132,7 +139,6 @@
 		9344C1372633EE2800548254 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				93E7E13A2625BDB200F1FC98 /* Main.storyboard */,
 				93E7E1662625CFA800F1FC98 /* AuthCoordinator.swift */,
 				9344C1442633F11600548254 /* Login */,
 				9344C1432633F11100548254 /* Register */,
@@ -147,26 +153,15 @@
 				9344C14C2633F18100548254 /* Home */,
 				9344C13F2633EE8600548254 /* Profile */,
 				9344C13E2633EE7E00548254 /* History */,
-				9344C13D2633EE7400548254 /* Transaction */,
+				93E90E95268494BF00D7965F /* Transactions */,
 			);
 			path = Main;
-			sourceTree = "<group>";
-		};
-		9344C13D2633EE7400548254 /* Transaction */ = {
-			isa = PBXGroup;
-			children = (
-				9344C1222633EB8700548254 /* TransactionCoordinator.swift */,
-				9344C1592633F1EE00548254 /* Views */,
-				9344C15B2633F1F700548254 /* ViewModels */,
-				9344C15A2633F1F200548254 /* ViewControllers */,
-			);
-			path = Transaction;
 			sourceTree = "<group>";
 		};
 		9344C13E2633EE7E00548254 /* History */ = {
 			isa = PBXGroup;
 			children = (
-				9344C12B2633ED6100548254 /* HistoryViewController.swift */,
+				9344C1252633EB9900548254 /* HistoryCoordinator.swift */,
 				9344C1572633F1E300548254 /* Views */,
 				9344C1562633F1DE00548254 /* ViewControllers */,
 				9344C1552633F1D800548254 /* ViewModels */,
@@ -257,7 +252,6 @@
 				9344C1502633F19E00548254 /* Coordinators */,
 				9344C14F2633F19600548254 /* ViewControllers */,
 				9344C14E2633F18E00548254 /* ViewModels */,
-				9344C1512633F1A900548254 /* Storyboards */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -286,17 +280,10 @@
 			path = Coordinators;
 			sourceTree = "<group>";
 		};
-		9344C1512633F1A900548254 /* Storyboards */ = {
-			isa = PBXGroup;
-			children = (
-				9344C15D2633F23400548254 /* Home.storyboard */,
-			);
-			path = Storyboards;
-			sourceTree = "<group>";
-		};
 		9344C1522633F1B800548254 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				93E90E912684452D00D7965F /* ProfileViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -318,7 +305,7 @@
 		9344C1562633F1DE00548254 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				9344C1252633EB9900548254 /* HistoryCoordinator.swift */,
+				9344C12B2633ED6100548254 /* HistoryViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -335,27 +322,6 @@
 			children = (
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		9344C1592633F1EE00548254 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		9344C15A2633F1F200548254 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		9344C15B2633F1F700548254 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		93E7E1282625BDB200F1FC98 = {
@@ -387,6 +353,33 @@
 				9344C1342633EDE100548254 /* Assets */,
 			);
 			path = CoordinatorTutorial;
+			sourceTree = "<group>";
+		};
+		93E90E95268494BF00D7965F /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				9321F7C02685B94500BFEA9E /* TransactionCoordinator.swift */,
+				93E90E9C26849DF700D7965F /* ViewControllers */,
+				93E90E9B26849DF100D7965F /* ViewModels */,
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
+		93E90E9B26849DF100D7965F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				93E90E9D26849E0F00D7965F /* TransactionViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		93E90E9C26849DF700D7965F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				93E90E96268494EC00D7965F /* ProductListViewController.swift */,
+				93E90E992684950300D7965F /* PaymentViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -449,7 +442,6 @@
 				93E7E1412625BDB400F1FC98 /* LaunchScreen.storyboard in Resources */,
 				93E7E13E2625BDB400F1FC98 /* Assets.xcassets in Resources */,
 				93E7E13C2625BDB200F1FC98 /* Main.storyboard in Resources */,
-				9344C15E2633F23400548254 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,19 +453,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				9344C1202633EB6500548254 /* HomeTabBarCoordinator.swift in Sources */,
+				93E90E97268494EC00D7965F /* ProductListViewController.swift in Sources */,
 				93E7E14A2625BF2500F1FC98 /* Coordinator.swift in Sources */,
 				9344C11A2633EA5600548254 /* HomeViewModel.swift in Sources */,
 				93E7E15A2625CB8C00F1FC98 /* RegisterViewController.swift in Sources */,
 				93E7E1632625CF8C00F1FC98 /* RegisterViewModel.swift in Sources */,
 				9344C11D2633EA9D00548254 /* HomeCoordinator.swift in Sources */,
+				93E90E9A2684950300D7965F /* PaymentViewController.swift in Sources */,
 				93E7E15F2625CF6100F1FC98 /* LoginViewModel.swift in Sources */,
+				93E90E922684452D00D7965F /* ProfileViewController.swift in Sources */,
 				9344C1292633EBB500548254 /* ProfileCoordinator.swift in Sources */,
 				9344C1172633EA1800548254 /* HomeViewController.swift in Sources */,
 				93E7E14D2625BF4F00F1FC98 /* AppCoordinator.swift in Sources */,
+				9321F7C12685B94500BFEA9E /* TransactionCoordinator.swift in Sources */,
 				93E7E1572625CB7B00F1FC98 /* LoginViewController.swift in Sources */,
 				93E7E1672625CFA800F1FC98 /* AuthCoordinator.swift in Sources */,
+				93E90E9E26849E0F00D7965F /* TransactionViewModel.swift in Sources */,
 				93E7E1352625BDB200F1FC98 /* AppDelegate.swift in Sources */,
-				9344C1232633EB8700548254 /* TransactionCoordinator.swift in Sources */,
 				9344C12C2633ED6100548254 /* HistoryViewController.swift in Sources */,
 				9344C1262633EB9900548254 /* HistoryCoordinator.swift in Sources */,
 			);
@@ -552,7 +548,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -607,7 +603,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
