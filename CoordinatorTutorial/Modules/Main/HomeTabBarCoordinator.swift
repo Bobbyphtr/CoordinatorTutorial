@@ -17,7 +17,12 @@ class HomeTabBarCoordinator : Coordinator {
     var navigationController: UINavigationController
     
     func start() {
+        print("HomeTabbar Coordinator Init")
         initializeHomeTabBar()
+    }
+    
+    deinit {
+        print("HomeTabbar Coordinator Deinit")
     }
     
     let storyboard = UIStoryboard.init(name: "Main", bundle: .main)

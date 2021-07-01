@@ -45,7 +45,6 @@ class AppCoordinator : Coordinator {
         children.removeAll()
         
         coordinator.parentCoordinator = self
-        children.append(coordinator)
         
         coordinator.start()
     }

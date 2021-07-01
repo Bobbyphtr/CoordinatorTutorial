@@ -45,8 +45,6 @@ extension HomeCoordinator : HomeNavigation {
     }
     
     func goToBuyProduct() {
-        // If you want to merge the transaction flow with the home
-        
 //        let vc = storyboard.instantiateViewController(withIdentifier: "ProductListViewController")
 //        navigationController.pushViewController(vc, animated: true)
         
@@ -57,8 +55,6 @@ extension HomeCoordinator : HomeNavigation {
         children.append(transactionCoordinator)
         
         transactionCoordinator.start()
-        
-        
     }
     
 }

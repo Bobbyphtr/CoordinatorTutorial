@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		9321F7C12685B94500BFEA9E /* TransactionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9321F7C02685B94500BFEA9E /* TransactionCoordinator.swift */; };
+		932F5B1E268D8F9B00679E55 /* SelfSizingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932F5B1C268D8F9B00679E55 /* SelfSizingTableView.swift */; };
+		932F5B1F268D8F9B00679E55 /* SelfSizingCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932F5B1D268D8F9B00679E55 /* SelfSizingCollectionView.swift */; };
+		932F5B22268D8FA800679E55 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932F5B20268D8FA800679E55 /* BaseTableViewController.swift */; };
+		932F5B23268D8FA800679E55 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932F5B21268D8FA800679E55 /* BaseViewController.swift */; };
+		932F5B25268D916000679E55 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932F5B24268D916000679E55 /* Storyboarded.swift */; };
 		9344C1172633EA1800548254 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9344C1162633EA1800548254 /* HomeViewController.swift */; };
 		9344C11A2633EA5600548254 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9344C1192633EA5600548254 /* HomeViewModel.swift */; };
 		9344C11D2633EA9D00548254 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9344C11C2633EA9D00548254 /* HomeCoordinator.swift */; };
@@ -34,6 +39,11 @@
 
 /* Begin PBXFileReference section */
 		9321F7C02685B94500BFEA9E /* TransactionCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCoordinator.swift; sourceTree = "<group>"; };
+		932F5B1C268D8F9B00679E55 /* SelfSizingTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfSizingTableView.swift; sourceTree = "<group>"; };
+		932F5B1D268D8F9B00679E55 /* SelfSizingCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfSizingCollectionView.swift; sourceTree = "<group>"; };
+		932F5B20268D8FA800679E55 /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		932F5B21268D8FA800679E55 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		932F5B24268D916000679E55 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		9344C1162633EA1800548254 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9344C1192633EA5600548254 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		9344C11C2633EA9D00548254 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
@@ -105,6 +115,7 @@
 		9344C1322633EDB300548254 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				932F5B24268D916000679E55 /* Storyboarded.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -112,6 +123,10 @@
 		9344C1332633EDD400548254 /* Supports */ = {
 			isa = PBXGroup;
 			children = (
+				932F5B20268D8FA800679E55 /* BaseTableViewController.swift */,
+				932F5B21268D8FA800679E55 /* BaseViewController.swift */,
+				932F5B1D268D8F9B00679E55 /* SelfSizingCollectionView.swift */,
+				932F5B1C268D8F9B00679E55 /* SelfSizingTableView.swift */,
 				93E7E1492625BF2500F1FC98 /* Coordinator.swift */,
 			);
 			path = Supports;
@@ -457,19 +472,24 @@
 				93E7E14A2625BF2500F1FC98 /* Coordinator.swift in Sources */,
 				9344C11A2633EA5600548254 /* HomeViewModel.swift in Sources */,
 				93E7E15A2625CB8C00F1FC98 /* RegisterViewController.swift in Sources */,
+				932F5B23268D8FA800679E55 /* BaseViewController.swift in Sources */,
+				932F5B25268D916000679E55 /* Storyboarded.swift in Sources */,
 				93E7E1632625CF8C00F1FC98 /* RegisterViewModel.swift in Sources */,
 				9344C11D2633EA9D00548254 /* HomeCoordinator.swift in Sources */,
 				93E90E9A2684950300D7965F /* PaymentViewController.swift in Sources */,
 				93E7E15F2625CF6100F1FC98 /* LoginViewModel.swift in Sources */,
 				93E90E922684452D00D7965F /* ProfileViewController.swift in Sources */,
 				9344C1292633EBB500548254 /* ProfileCoordinator.swift in Sources */,
+				932F5B22268D8FA800679E55 /* BaseTableViewController.swift in Sources */,
 				9344C1172633EA1800548254 /* HomeViewController.swift in Sources */,
 				93E7E14D2625BF4F00F1FC98 /* AppCoordinator.swift in Sources */,
 				9321F7C12685B94500BFEA9E /* TransactionCoordinator.swift in Sources */,
+				932F5B1F268D8F9B00679E55 /* SelfSizingCollectionView.swift in Sources */,
 				93E7E1572625CB7B00F1FC98 /* LoginViewController.swift in Sources */,
 				93E7E1672625CFA800F1FC98 /* AuthCoordinator.swift in Sources */,
 				93E90E9E26849E0F00D7965F /* TransactionViewModel.swift in Sources */,
 				93E7E1352625BDB200F1FC98 /* AppDelegate.swift in Sources */,
+				932F5B1E268D8F9B00679E55 /* SelfSizingTableView.swift in Sources */,
 				9344C12C2633ED6100548254 /* HistoryViewController.swift in Sources */,
 				9344C1262633EB9900548254 /* HistoryCoordinator.swift in Sources */,
 			);
